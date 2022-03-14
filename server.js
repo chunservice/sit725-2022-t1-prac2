@@ -14,7 +14,7 @@ app.listen(port);
 console.log("Server listening on: "+port);
 
 // write a function adding two numbers
-const addtwonum =(n1,n2)=>
+const addtwonum = function(n1,n2)
 {
     return n1+n2;
 }
@@ -23,7 +23,7 @@ const addtwonum =(n1,n2)=>
 console.log(addtwonum (10,14));
 
 // to get the function on server side, using REST API
-app.get ("/addtwonum", (req,res)=>{
+app.get ("/addtwonum", function(req,res){
 
     // define constant n1 and n2
     const n1=parseInt(req.query.n1);
