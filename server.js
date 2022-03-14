@@ -7,8 +7,8 @@ var app = express();
 // default path to the index.html in the public folder
 app.use(express.static(__dirname + '/public'));
 
-// set port = 3000
-var port = 3000;
+// set port = 3030
+var port = 3030;
 
 app.listen(port);
 console.log("Server listening on: "+port);
